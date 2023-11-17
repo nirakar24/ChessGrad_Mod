@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    font-size: 0.8vw;
+    align-items: center;
+    padding: 2vw 3vw;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar li{
+    padding: 0vw 2vw;
+    list-style: none;
+}
+
+.navbar a{
+    color:black ;
+    text-decoration: none;
+}
+
+button.CTA{
+    padding: 1vw 2vw;
+    font-size: 1vw;
+    background: transparent;
+    border-radius: 1vw;
+    /* margin-right: 6vw; */
+}
+
+button.CTA:hover{
+    background: white;
+    transition: 0.5s;
+}
+
+.hero_section{
+    display: flex;
+    width: 100%;
+    height: 50vw;
+    background-color: rgb(179, 245, 185);
+}
+
+.hero_left{
+    width: 70%;
+    height: 115%;
+    display: flex;
+    flex-direction: column;
+    /* gap: 0.2vw; */
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.hero_right{
+    width: 30%;
+    height: 115%;
+    display: flex;
+    background-color: wheat;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0px 16px 10px rgba(39, 39, 41, 0.6));
+}
+
+.king_img{
+    width: 50vw;
+    height: 50vw;
+    position: absolute;
+    transform: translate(10%, -25%) rotate(-20deg);
+    top: 30%;
+    right: 10%;
+    /* background-color: rgb(0, 89, 255); */
+    z-index: 9;
+}
+
+.queen_img{
+    width: 30vw;
+    height: 30vw;
+    position: absolute;
+    transform: translate(-10%, -10%) rotate(15deg);
+    top: 20%;
+    /* background-color: red; */
+}
+
+.herotext{
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    margin-top: 15vw;
+    font-size: 1.5vw;
+}
+
+.enroll{
+    width: 20%;
+    padding: 1vw 0vw;
+    border-radius: 1.5vw;
+    font-size: 0.8vw;
+    font-weight: 600;
+}
+
+.enroll:hover{
+    background-color: white;
+}
+
+.counter{
+    width: 70%;
+    height: 15%;
+    /* border: solid black 1px; */
+    display: flex;
+    box-shadow: 0 20px 2px -2px rgb(83, 58, 10);
+    /* background-color: red; */
+}
+
+.count{
+    width: 25%;
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: solid rgba(0, 0, 0, 0.301) 1px;
+}
+.count1{
+    border-left: solid rgba(0, 0, 0, 0.342) 1px;
+}
+
+.team{
+    width: 90%;
+    height: 12vw;
+    text-align: center;
+    /* background-color: aqua; */
+    margin-top: 15vw;
+    margin-left: 7vw;
+
+}
+
+.why{
+    /* background-color: rgb(19, 22, 22); */
+    margin-top: 30vw;
+    width: 100%;
+    height: 40vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap:3vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout {
+    width: 70%;
+    height: 80%;
+    /* margin-top: 20vw; */
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5vw;
+  }
+
+.logo{
+    width: 60px;
+    height: 60px;
+    /* background-color: rgb(250, 250, 250); */
+    z-index: 99;
+}
+
+.layout div{
+    /* background-color: red; */
+    /* border: solid black 1px; */
+    display: flex;
+    gap: 1vw;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: wheat;
+    height: 10vw;
+}
